@@ -1,4 +1,4 @@
-# cupy-nanobind-example
+# Pytorch - nanobind - CUDA example
 
 A minimal demo of a Python project that uses scikit-build-core (CMAKE) to compile a CUDA extension that accepts pytorch tensors via nanobind's DLPack support.
 
