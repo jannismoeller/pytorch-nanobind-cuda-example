@@ -1,6 +1,6 @@
 # cupy-nanobind-example
 
-A minimal demo of a Python project that uses scikit-build-core to compile a CUDA CPython extension that accepts a cupy array via nanobind's DLPack support. This is possibly the most technologies I've strung together in a single sentence.
+A minimal demo of a Python project that uses scikit-build-core (CMAKE) to compile a CUDA extension that accepts pytorch tensors via nanobind's DLPack support.
 
 ## Build and install (basic)
 ```console
@@ -12,6 +12,7 @@ $ pip install .
 $ pip install scikit-build-core nanobind ninja
 $ pip install -e . --no-build-isolation
 ```
+The former being necessary, as a rebuild does not automatically collect the packages specified in `pyproject.toml` under [build-system] > requires.
 
 ## Test
 ```
